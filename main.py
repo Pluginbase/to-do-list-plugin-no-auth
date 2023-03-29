@@ -5,7 +5,7 @@ import quart_cors
 from quart import request
 
 # Note: Setting CORS to allow chat.openapi.com is required for ChatGPT to access your plugin
-app = quart_cors.cors(quart.Quart(__name__), allow_origin="https://chat.openai.com")
+app = quart_cors.cors(quart.Quart(__name__), allow_origin="*")
 
 _TODOS = {}
 
